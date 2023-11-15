@@ -62,6 +62,7 @@ def get_optimal_weights(
     value_date: pd.Timestamp,
     maturity_limit: int,
     fee: float = 0,
+    target_rating: float = 90,
 ):
     """
     Find optimal weights by maximizing custom sharp ratio
@@ -76,7 +77,7 @@ def get_optimal_weights(
     init_weights = np.ones(asset_num) / asset_num
     assert upper_bound >= 1 / asset_num, "not enough assets for the given upper_bound"
     constraints = create_constraints(
-        target_rating=92, ratings=sharp_ratio.bond_data.num_rating
+        target_rating=target_rating, ratings=sharp_ratio.bond_data.num_rating
     )
     bounds = tuple((0, upper_bound) for _ in range(asset_num))
     weights = sco.minimize(

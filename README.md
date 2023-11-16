@@ -46,3 +46,7 @@
 
 ### Other materials 
  - Quantitative Management of Bond Portfolios on JSTOR https://www.jstor.org/stable/j.ctvw04cxt
+
+
+### Latency backtest benchmark
+- 120 second per one trading year

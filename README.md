@@ -1,5 +1,11 @@
 # hse-course-work-bonds
 
+
+## What is it?
+
+This is an outline for course work (HSE CS, Moscow) on the analysis of the implications of numerical optimization on bonds portfolios 
+
+
 Обязательные ограничения:
 
 1. 0 < weight_i <= n

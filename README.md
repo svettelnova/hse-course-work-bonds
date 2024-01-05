@@ -3,12 +3,13 @@
 
 ## What is it?
 
-This is an outline for course work (HSE CS, Moscow) on the analysis of the implications of numerical optimization on bonds portfolios 
+This is an outline for course work (HSE CS, Moscow) on the analysis of the implications of numerical optimization on bonds portfolios
+This is the publick part of the project and represents a dedicated example for the students 
 
 
 Обязательные ограничения:
 
-1. 0 < weight_i <= n
+1. 0 <= weight_i <= 1
 2. sum weights == 1
 3. оптимизация должна поддерживать добавление каких-то кастомных ограничений
 

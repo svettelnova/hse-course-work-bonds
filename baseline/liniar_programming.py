@@ -46,7 +46,7 @@ def minimize(
         old_bounds = np.vstack((lb, ub)).T.tolist()
 
     sharpe = data.z_spread / data.mod_dur
-    sharpe[sharpe < 0] = 0  # ony positive sharpe ration cuz ve can't short
+    sharpe[sharpe < 0] = 0  # only positive sharpe ratio cuz ve can't short
 
     #  z * x > z.median, sigma * x < sigma.median
     A_ub = np.vstack([-data.z_spread, data.mod_dur])
